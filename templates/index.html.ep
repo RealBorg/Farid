@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+[% PROCESS 'html_head.tt2' %]
+</head>
+<body>
+[% PROCESS 'html_body_top.tt2' %]
+<div class="posting">
+    [% FOREACH key IN random.keys.sort %]
+    [%= key %]: [%= random.$key %]<br>
+    [% END %]
+</div>
+[% PROCESS 'html_body_bottom.tt2' %]
+</body>
+</html>

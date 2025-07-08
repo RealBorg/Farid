@@ -1,0 +1,14 @@
+﻿<% 
+layout 'default';
+title 'Server Status';
+%>
+<div class="posting">
+    <div class="body">
+        <% for my $check (@{$checks}) { %>
+        <% my $bgcolor = '#AAFFAA';
+        $bgcolor = '#ffffaa' if $check->{result} =~ /^WARNING/;
+        $bgcolor = '#ffaaaa' if $check->{result} =~ /^ERROR/; %>
+        <div style="background-color: <%= $bgcolor %>"><%= $check->{server} %> <%= $check->{test} %> <%= $check->{date} ? id2time($check->{date} * 1_000_000_000) : '' %> <%= $check->{result} %></div>
+            <% } %>
+    </div>
+</div>

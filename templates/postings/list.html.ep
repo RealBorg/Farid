@@ -1,0 +1,21 @@
+% no strict;
+% for my $posting (@{$postings}) {
+    <div class="posting">
+        <div class="posting_header">
+            <div class="author"><a href="<%= url_for('/users/'.$posting->{user}->{username}) %>"><%= $posting->{user}->{displayname} %></a></div>
+            <div class="date"><a href="<%= url_for('/postings/'.$posting->{id}) %>"><%= id2time($posting->{id}) %></a></div>
+        </div>
+        <div class="body" lang="[%= $posting->{lang} %>" onClick="this.classList.toggle('enlarged');"><%== $self->markdown($posting->{text}) %></div>
+%   if (@{$posting->{medias}}) {
+            <div class="media">
+%       for my $media (@{$posting->{medias}}) {
+%           if ($media->{type} eq "image") {
+                    <img class="media" src="<%= $media->{url} %>" onClick="this.classList.toggle('enlarged');">
+%           } elsif ($media->{type} eq "video") {
+                    <video class="media" src="<%= $media->{url} %>" controls>
+%           }
+%       }
+            </div>
+%   }
+    </div>
+% }

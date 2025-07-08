@@ -1,0 +1,19 @@
+% layout('default');
+% no strict;
+% use Farid::Util;
+<div class="posting_navigation" lang="en">
+%   for my $l (sort(keys(%{$article->{languages}}))) {
+    <b><%= Farid::Util->lang2name($l) %></b>: 
+%       for my $f (qw/html md mp3 txt/) {
+%           if ($article->{languages}->{$l}->{$f}) {
+                <a href="<%= url_for("/articles/$article->{id}/$l.$f") %>"><%= uc($f) %></a>,
+%           }
+%       }
+%   }
+</div>
+<div class="posting" lang="<%= $article->{'language'} %>">
+    <%== $article->{'body'} %>
+</div>
+<div class="posting_navigation" lang="en">
+    Impressions: <%= $impressions %>
+</div>

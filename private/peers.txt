@@ -1,0 +1,5 @@
+https://amsterdam.hostmaster.org/
+https://fremont.hostmaster.org/
+https://jakarta.hostmaster.org/
+https://madrid.hostmaster.org/
+https://stockholm.hostmaster.org/

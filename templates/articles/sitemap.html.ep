@@ -1,0 +1,8 @@
+% no strict;
+<html>
+<body>
+% for my $url (@{$urls}) {
+<p><a href="<%= $url %>"><%= $url %></a></p>
+% }
+</body>
+</html>

@@ -1,0 +1,43 @@
+% layout('default');
+% no strict;
+<div class="posting">
+    <form method="GET">
+        <select name="country" onChange="window.location.href = '/weather/'+this.form.elements['country'].value+'.html';">
+% for my $c (@{$countries}) {
+        <option value="<%= $c %>" <%= ($c eq param('country')) ? 'selected' : '' %>><%= $c %></option>
+% }
+        </select>
+% if ($airports) {
+        <select name="airport" onChange="window.location.href = '/weather/'+this.form.elements['country'].value+'/'+this.form.elements['airport'].value+'.html';">
+%       for my $a (@{$airports}) {
+            <option value="<%= $a->{id} %>" <%= ($a->{id} eq param('airport_id')) ? 'selected' : '' %>><%= $a->{name} %></option>
+%       }
+        </select>
+% }
+    </form>
+</div>
+% if (defined $metar) {
+<div class="posting" style="white-space: pre-line">
+    <%= $metar->{text} %>
+    <hr>
+    <%= $metar->{decoded} %>
+    <hr>
+    <audio controls preload="none">
+        <source src="<%= url_for("/weather/metar/$country/$airport->{id}.mp3") %>" type="audio/mpeg">
+    </audio>
+</div>
+% }
+% if ($taf) {
+<div class="posting" style="white-space: pre-line">
+    <%= $taf->{text} %>
+    <hr>
+    <%= $taf->{decoded} %>
+    <hr>
+    <audio controls preload="none">
+        <source src="<%= url_for("/weather/taf/$country/$airport->{id}.mp3") %>" type="audio/mpeg">
+    </audio>
+</div>
+% }
+<div class="posting" style="background-color: #ffff00">
+For educational purposes only. Not for flight planning or operational use.
+</div>

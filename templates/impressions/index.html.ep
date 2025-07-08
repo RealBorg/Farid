@@ -1,0 +1,30 @@
+% layout 'default';
+% no strict;
+<div class="posting_navigation">
+    <%= $count %> records
+</div>
+<div class="posting">
+    <table>
+% for my $impression (@{$impressions}) {
+        <tr>
+            <td><%= id2time($impression->{id}) %></td>
+            <td><a href="?ip=<%= $impression->{ip} %>"><%= $impression->{ip} %></a></td>
+            <td><a href="?path=<%= $impression->{path} %>"><%= $impression->{path} %></a></td>
+            <td><%= $impression->{server} %></td>
+            <td><a href="?referer=<%= $impression->{referer} %>"><%= $impression->{referer} %></a></td>
+        </tr>
+% }
+    </table>
+</div>
+<div class="posting_navigation">
+    <div style="width: 20%">
+% if ($page->{previous}) {
+            <a href="<%= url_for->query(page => $page->{previous} ) %>">&lt;- Page <%= $page->{previous} %></a>
+% }
+    </div>
+    <div style="text-align: right; width: 20%">
+% if ($page->{next}) {
+            <a href="<%= url_for->query(page => $page->{next}) %>">Page <%= $page->{next} %> -&gt;</a>
+% }
+    </div>
+</div>

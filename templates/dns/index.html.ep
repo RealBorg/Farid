@@ -1,0 +1,9 @@
+% layout 'default';
+% no strict;
+<div class="posting">
+    <table>
+% for my $record (@{$records}) {
+        <tr><td><%= $record->{name} %></td><td><%= $record->{class} %></td><td><%= $record->{type} %></td><td><%= $record->{data} %></td></tr>
+% }
+    </table>
+</div>

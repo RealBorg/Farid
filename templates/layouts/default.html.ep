@@ -1,0 +1,94 @@
+% no strict;
+<!DOCTYPE html>
+<html lang="<%= $lang // 'en' %>">
+    <head>
+        <title><%= title %></title>
+        <link rel="icon" type="image/png" sizes="16x16" href="<%= url_for('/favicon/16.png') %>">
+        <link rel="icon" type="image/png" sizes="32x32" href="<%= url_for('/favicon/32.png') %>">
+        <link rel="icon" type="image/png" sizes="64x64" href="<%= url_for('/favicon/64.png') %>">
+        <link rel="icon" type="image/png" sizes="128x128" href="<%= url_for('/favicon/128.png') %>">
+        <link rel="icon" type="image/png" sizes="256x256" href="<%= url_for('/favicon/256.png') %>">
+        <link rel="icon" type="image/png" sizes="512x512" href="<%= url_for('/favicon/512.png') %>">
+        <link rel="icon" type="image/x-icon" href="<%= url_for('/favicon.ico') %>">
+        <link rel="manifest" href="<%= url_for('/manifest.json') %>">
+        <link rel="me" href="https://freefree.ps/@Farid">
+        <link rel="stylesheet" href="<%= url_for('/default.css') %>">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Alternates -->
+        <% for my $alternate (@{$alternates}) { %>
+        <link rel="alternate" hreflang="<%= alternate->{hreflang} %>" href="<%= alternate->{href} %>" type="<%= alternate->{type} %>>
+        <% } %>
+        <!-- OpenGraph -->
+        <meta property="og:image" content="<%= url_for('/favicon/512.png') %>">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta property="og:title" content="<%= title %>">
+        <meta property="og:url" content="<%= url_for %>">
+        <meta property="og:type" content="website">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="<%= url_for('/favicon/512.png') %>">
+        <meta name="twitter:title" content="<%= title %>">
+        <meta name="twitter:site" content="@R34lB0rg">
+        <!-- MathJax -->
+        <script>
+        window.MathJax = {
+          loader: {
+            load: ['input/tex', 'input/asciimath', 'output/svg']
+          },
+          startup: {
+            ready() {
+              MathJax.startup.defaultReady();
+            }
+          }
+        };
+        </script>
+        <script src="<%= url_for('/MathJax-3.2.2/es5/startup.js') %>" async></script>
+    </head>
+    <body>
+        <div class="header" lang="en">
+            <div class="header_left">
+                <a class="header_logo" href="<%= url_for('/') %>"><img class="header_logo" src="<%= url_for('/favicon/64.png') %>"></a>
+            </div>
+            <div class="header_middle"><%= title %></div>
+            <div class="header_right">
+            </div>
+        </div>
+        <div class="header2" lang="en">
+            <div class="header2_left">
+                <a href="<%= url_for('/') %>">Home</a> |
+                <a href="<%= url_for('/articles') %>">Articles</a> |
+                <a href="<%= url_for('/postings') %>">Postings</a> |
+                <a href="<%= url_for('/weather') %>">Weather</a> |
+                <a href="<%= url_for('/impressions/top') %>">Top</a> |
+                <a href="<%= url_for('/impressions/trending') %>">Trending</a> |
+                <a href="<%= url_for('/checkit') %>">Status</a>
+            </div>
+            <div class="header2_center">
+            </div>
+            <div class="header2_right">
+                <% if (undef) { %>
+                    <a href="<%= url_for('/postings/create') %>">Create</a> |
+                    <a href="<%= url_for('/sync') %>">Subscribe</a>
+                <% } else { %>
+                    <a href="<%= url_for('/login') %>">Login</a>
+                <% } %>
+            </div>
+        </div>
+        <body><%= content %></body>
+        <div class="footer" lang="en">
+            <div class="footer_left">
+            </div>
+            <div class="footer_center">
+            </div>
+            <div class="footer_right">
+                Powered by
+                <a href="https://www.perl.org/">PERL</a>,
+                <a href="http://catalyst.perl.org/">Catalyst</a>,
+                <a href="https://www.postgresql.org/">PostgreSQL</a>, and
+                <a href="https://ninkilim.com/articles/ninkilim">Ninkilim</a>
+            </div>
+        </div>
+    </body>
+</html>

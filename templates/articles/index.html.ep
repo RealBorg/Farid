@@ -1,0 +1,13 @@
+﻿<% layout('default'); %>
+<div class="posting" style="background-color: #ffff00">
+    All articles are <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>.
+    Feel free to share, adapt, and republish.
+    Please attribute and link to <a href="https://farid.ps/">farid.ps</a>
+</div>
+<div class="posting">
+    <div class="body">
+        <% for my $title (@{$articles_by_date}) { %>
+        <a href="<%= url_for("/articles/$title") %>"><%= $articles->{$title}->{'date'} %> <%= $articles->{$title}->{'title'} %></a> ( <% for my $lang (sort(keys(%{$articles->{$title}->{'lang'}}))) { %><a href="<%= url_for("/articles/$title/$lang.html") %>"><%= $lang %></a> <% } %>)<br>
+        <% } %>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+% layout 'default';
+% no strict;
+<div class="posting">
+% for my $key (sort(keys(%{$random}))) {
+    <%= $key %>: <%= $random->{$key} %><br>
+% }
+</div>

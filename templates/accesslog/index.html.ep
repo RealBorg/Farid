@@ -1,0 +1,34 @@
+% layout 'default';
+% no strict;
+<div class="posting_navigation">
+    <%= $count %> records found
+</div>
+<div class="posting">
+    <div class="body">
+        <table>
+% for my $access (@{$accesslog}) {
+            <tr>
+                <td><%= id2time($access->{id}) %></td>
+                <td><a href="?ip=<%= $access->{ip} %>"><%= $access->{ip} %></a></td>
+                <td><a href="?path=<%= $access->{path} %>"><%= $access->{path} %></a></td>
+                <td><a href="?status=<%= $access->{status} %>"><%= $access->{status} %></a></td>
+                <td><%= $format_duration->($access->{duration}) %></td>
+                <td><%= $access->{server} %></td>
+                <td><a href="?referer=<%= $access->{referer} %>"><%= $access->{referer} %></a></td>
+            </tr>
+% }
+        </table>
+    </div>
+</div>
+<div class="posting_navigation">
+    <div style="width: 20%">
+% if ($page->{previous}) {
+            <a href="[%= c.uri_for(c.action, { page => page.previous }) %]">&lt;- Page [%= page.previous %]</a>
+% }
+    </div>
+    <div style="text-align: right; width: 20%">
+% if ($page->{next}) {
+            <a href="[%= c.uri_for(c.action, { page => page.next }) %]">Page [%= page.next %] -&gt;</a>
+% }
+    </div>
+</div>

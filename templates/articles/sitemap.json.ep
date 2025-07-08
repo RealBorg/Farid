@@ -1,0 +1,10 @@
+% no strict;
+{
+    "urls": [
+% for my $url (@{$urls}) {
+        {
+            "loc": "<%= $url %>"
+        },
+% }
+    ]
+}

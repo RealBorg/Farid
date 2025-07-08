@@ -1,0 +1,12 @@
+% layout('default');
+% no strict;
+<div class="posting">
+    <table>
+        % for my $impression (@{$impressions}) {
+        <tr>
+            <td><a href="<%= $impression->{path} %>"><%= $impression->{path} %></a></td>
+            <td><%= $impression->{count} %></td>
+        </tr>
+% }
+    </table>
+</div>

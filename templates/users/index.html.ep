@@ -1,0 +1,22 @@
+% layout 'default';
+% no strict;
+% for my $user (@{$users}) {
+    <div class="posting">
+        <div class="posting_header">
+            <div class="author"><%= $user->{displayname} %></div>
+            <div class="date"><%= $user->{username} %></div>
+        </div>
+    </div>
+% }
+<div class="posting_navigation">
+    <div style="width: 20%">
+% if ($page->{previous}) {
+            <a href="[%= c.uri_for(c.action, { page => page.previous }) %]">&lt;- Page [%= page.previous %]</a>
+% }
+    </div>
+    <div style="text-align: right; width: 20%">
+% if ($page->{next}) {
+            <a href="[%= c.uri_for(c.action, { page => page.next }) %]">Page [%= page.next %] -&gt;</a>
+% }
+    </div>
+</div>

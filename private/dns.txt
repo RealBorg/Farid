@@ -1,0 +1,374 @@
+#
+# FARID.PS
+#
+farid.ps IN SOA
+farid.ps IN TXT "v=spf1 a mx -all"
+farid.ps IN TXT "google-site-verification=fXfv4sll2jMokH_Pgu105m-DMgKBvTy9bqN_xFdgWv8"
+farid.ps IN TXT "google-site-verification=3amaDaVTQk8Dr_9nuIL-xWpLo0SoLHeOxzHfsMZtfCI"
+
+amsterdam.farid.ps IN A 172.235.160.56
+amsterdam.farid.ps IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+amsterdam.farid.ps IN SSHFP 4 1 9c7fe74a6dc2acbea71141ba6d139088eb77fa4a
+amsterdam.farid.ps IN SSHFP 4 2 eba19ccbfffe44935fbc5fd1754aeb651826e8c0ad6d9e06432553f78ce753ce
+farid.ps IN A 172.235.160.56
+farid.ps IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+farid.ps IN MX 10 amsterdam.farid.ps
+farid.ps IN NS amsterdam.farid.ps
+www.farid.ps IN A 172.235.160.56
+www.farid.ps IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+
+fremont.farid.ps IN A 23.239.4.45
+fremont.farid.ps IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+fremont.farid.ps IN SSHFP 4 1 9831cd42b033e41e5cf8ed07736b4303e7a74b98
+fremont.farid.ps IN SSHFP 4 2 bdf50046fc0a69bc5768004355240ba2315d2879de02e0edf9357f71df2a1060
+farid.ps IN A 23.239.4.45
+farid.ps IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+farid.ps IN MX 10 fremont.farid.ps
+farid.ps IN NS fremont.farid.ps
+www.farid.ps IN A 23.239.4.45
+www.farid.ps IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+
+jakarta.farid.ps IN A 172.232.248.130
+jakarta.farid.ps IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+jakarta.farid.ps IN SSHFP 4 1 b813860e728aae1137c18f3660b49a15d0310792
+jakarta.farid.ps IN SSHFP 4 2 cef66b44223ac4fd5d41b6a61cc98ad83fd84c2f984c550467817e44861a0e85
+farid.ps IN A 172.232.248.130
+farid.ps IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+farid.ps IN MX 10 jakarta.farid.ps
+farid.ps IN NS jakarta.farid.ps
+www.farid.ps IN A 172.232.248.130
+www.farid.ps IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+
+madrid.farid.ps IN A 172.233.108.211
+madrid.farid.ps IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+madrid.farid.ps IN SSHFP 4 1 8547824fc1cd1f268288c20b7ce066f3195446ef
+madrid.farid.ps IN SSHFP 4 2 8de342b8f866fb5a832c9c2733abde76e86be07013521fa52eb71b2a907b0e0a
+farid.ps IN A 172.233.108.211
+farid.ps IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+farid.ps IN MX 10 madrid.farid.ps
+farid.ps IN NS madrid.farid.ps
+www.farid.ps IN A 172.233.108.211
+www.farid.ps IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+
+stockholm.farid.ps IN A 172.232.159.35
+stockholm.farid.ps IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+stockholm.farid.ps IN SSHFP 4 1 328a1e39ec3ce6b026cb305a067f2bb3793672dd
+stockholm.farid.ps IN SSHFP 4 2 0bed77e1d396bff8f9c0d8403155c65be4d9ecebf3fcfd9784ecc83c68ab650d
+farid.ps IN A 172.232.159.35
+farid.ps IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+farid.ps IN MX 10 stockholm.farid.ps
+farid.ps IN NS stockholm.farid.ps
+www.farid.ps IN A 172.232.159.35
+www.farid.ps IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+#
+# DESTINYMARS.ORG
+#
+destinymars.org IN SOA
+destinymars.org IN TXT "v=spf1 a mx -all"
+destinymars.org IN TXT "google-site-verification=fXfv4sll2jMokH_Pgu105m-DMgKBvTy9bqN_xFdgWv8"
+
+amsterdam.destinymars.org IN A 172.235.160.56
+amsterdam.destinymars.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+amsterdam.destinymars.org IN SSHFP 4 1 9c7fe74a6dc2acbea71141ba6d139088eb77fa4a
+amsterdam.destinymars.org IN SSHFP 4 2 eba19ccbfffe44935fbc5fd1754aeb651826e8c0ad6d9e06432553f78ce753ce
+destinymars.org IN A 172.235.160.56
+destinymars.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+destinymars.org IN MX 10 amsterdam.destinymars.org
+destinymars.org IN NS amsterdam.destinymars.org
+www.destinymars.org IN A 172.235.160.56
+www.destinymars.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+
+fremont.destinymars.org IN A 23.239.4.45
+fremont.destinymars.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+fremont.destinymars.org IN SSHFP 4 1 9831cd42b033e41e5cf8ed07736b4303e7a74b98
+fremont.destinymars.org IN SSHFP 4 2 bdf50046fc0a69bc5768004355240ba2315d2879de02e0edf9357f71df2a1060
+destinymars.org IN A 23.239.4.45
+destinymars.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+destinymars.org IN MX 10 fremont.destinymars.org
+destinymars.org IN NS fremont.destinymars.org
+www.destinymars.org IN A 23.239.4.45
+www.destinymars.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+
+jakarta.destinymars.org IN A 172.232.248.130
+jakarta.destinymars.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+jakarta.destinymars.org IN SSHFP 4 1 b813860e728aae1137c18f3660b49a15d0310792
+jakarta.destinymars.org IN SSHFP 4 2 cef66b44223ac4fd5d41b6a61cc98ad83fd84c2f984c550467817e44861a0e85
+destinymars.org IN A 172.232.248.130
+destinymars.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+destinymars.org IN MX 10 jakarta.destinymars.org
+destinymars.org IN NS jakarta.destinymars.org
+www.destinymars.org IN A 172.232.248.130
+www.destinymars.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+
+madrid.destinymars.org IN A 172.233.108.211
+madrid.destinymars.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+madrid.destinymars.org IN SSHFP 4 1 8547824fc1cd1f268288c20b7ce066f3195446ef
+madrid.destinymars.org IN SSHFP 4 2 8de342b8f866fb5a832c9c2733abde76e86be07013521fa52eb71b2a907b0e0a
+destinymars.org IN A 172.233.108.211
+destinymars.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+destinymars.org IN MX 10 madrid.destinymars.org
+destinymars.org IN NS madrid.destinymars.org
+www.destinymars.org IN A 172.233.108.211
+www.destinymars.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+
+stockholm.destinymars.org IN A 172.232.159.35
+stockholm.destinymars.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+stockholm.destinymars.org IN SSHFP 4 1 328a1e39ec3ce6b026cb305a067f2bb3793672dd
+stockholm.destinymars.org IN SSHFP 4 2 0bed77e1d396bff8f9c0d8403155c65be4d9ecebf3fcfd9784ecc83c68ab650d
+destinymars.org IN A 172.232.159.35
+destinymars.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+destinymars.org IN MX 10 stockholm.destinymars.org
+destinymars.org IN NS stockholm.destinymars.org
+www.destinymars.org IN A 172.232.159.35
+www.destinymars.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+
+#
+# HOSTMASTER.ORG
+#
+hostmaster.org IN SOA
+hostmaster.org IN TXT "v=spf1 a mx -all"
+hostmaster.org IN TXT "google-site-verification=zqgztRa13YsP59jzutO_Up16kphNH7xBkx2xkUIcm2Y"
+hostmaster.org IN TXT "google-site-verification=PBZdTm0ehoZ3IIwHNViF_AFVOkRCoYOiPol5H_Yfcow"
+hostmaster.org IN TXT "yandex-verification: e49b6ad79faaf49d"
+
+amsterdam.hostmaster.org IN A 172.235.160.56
+amsterdam.hostmaster.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+amsterdam.hostmaster.org IN SSHFP 4 1 9c7fe74a6dc2acbea71141ba6d139088eb77fa4a
+amsterdam.hostmaster.org IN SSHFP 4 2 eba19ccbfffe44935fbc5fd1754aeb651826e8c0ad6d9e06432553f78ce753ce
+hostmaster.org IN A 172.235.160.56
+hostmaster.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+hostmaster.org IN MX 10 amsterdam.hostmaster.org
+hostmaster.org IN NS amsterdam.hostmaster.org
+www.hostmaster.org IN A 172.235.160.56
+www.hostmaster.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+a.ns.hostmaster.org IN A 172.235.160.56
+a.ns.hostmaster.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+
+fremont.hostmaster.org IN A 23.239.4.45
+fremont.hostmaster.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+fremont.hostmaster.org IN SSHFP 4 1 9831cd42b033e41e5cf8ed07736b4303e7a74b98
+fremont.hostmaster.org IN SSHFP 4 2 bdf50046fc0a69bc5768004355240ba2315d2879de02e0edf9357f71df2a1060
+hostmaster.org IN A 23.239.4.45
+hostmaster.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+hostmaster.org IN MX 10 fremont.hostmaster.org
+hostmaster.org IN NS fremont.hostmaster.org
+www.hostmaster.org IN A 23.239.4.45
+www.hostmaster.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+
+jakarta.hostmaster.org IN A 172.232.248.130
+jakarta.hostmaster.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+jakarta.hostmaster.org IN SSHFP 4 1 b813860e728aae1137c18f3660b49a15d0310792
+jakarta.hostmaster.org IN SSHFP 4 2 cef66b44223ac4fd5d41b6a61cc98ad83fd84c2f984c550467817e44861a0e85
+hostmaster.org IN A 172.232.248.130
+hostmaster.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+hostmaster.org IN MX 10 jakarta.hostmaster.org
+hostmaster.org IN NS jakarta.hostmaster.org
+www.hostmaster.org IN A 172.232.248.130
+www.hostmaster.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+
+madrid.hostmaster.org IN A 172.233.108.211
+madrid.hostmaster.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+madrid.hostmaster.org IN SSHFP 4 1 8547824fc1cd1f268288c20b7ce066f3195446ef
+madrid.hostmaster.org IN SSHFP 4 2 8de342b8f866fb5a832c9c2733abde76e86be07013521fa52eb71b2a907b0e0a
+hostmaster.org IN A 172.233.108.211
+hostmaster.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+hostmaster.org IN MX 10 madrid.hostmaster.org
+hostmaster.org IN NS madrid.hostmaster.org
+www.hostmaster.org IN A 172.233.108.211
+www.hostmaster.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+
+stockholm.hostmaster.org IN A 172.232.159.35
+stockholm.hostmaster.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+stockholm.hostmaster.org IN SSHFP 4 1 328a1e39ec3ce6b026cb305a067f2bb3793672dd
+stockholm.hostmaster.org IN SSHFP 4 2 0bed77e1d396bff8f9c0d8403155c65be4d9ecebf3fcfd9784ecc83c68ab650d
+hostmaster.org IN A 172.232.159.35
+hostmaster.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+hostmaster.org IN MX 10 stockholm.hostmaster.org
+hostmaster.org IN NS stockholm.hostmaster.org
+www.hostmaster.org IN A 172.232.159.35
+www.hostmaster.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+#
+# NINKILIM.COM
+#
+ninkilim.com IN SOA
+ninkilim.com IN TXT "v=spf1 a mx -all"
+ninkilim.com IN TXT "google-site-verification=fvGdqFc53d07QnLXQRy2V2ggUfsWIjhKWeRR3e5vqX0"
+ninkilim.com IN TXT "yandex-verification: c337e2f4288d665e"
+
+amsterdam.ninkilim.com IN A 172.235.160.56
+amsterdam.ninkilim.com IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+amsterdam.ninkilim.com IN SSHFP 4 1 9c7fe74a6dc2acbea71141ba6d139088eb77fa4a
+amsterdam.ninkilim.com IN SSHFP 4 2 eba19ccbfffe44935fbc5fd1754aeb651826e8c0ad6d9e06432553f78ce753ce
+ninkilim.com IN A 172.235.160.56
+ninkilim.com IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+ninkilim.com IN MX 10 amsterdam.ninkilim.com
+ninkilim.com IN NS amsterdam.ninkilim.com
+www.ninkilim.com IN A 172.235.160.56
+www.ninkilim.com IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+
+fremont.ninkilim.com IN A 23.239.4.45
+fremont.ninkilim.com IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+fremont.ninkilim.com IN SSHFP 4 1 9831cd42b033e41e5cf8ed07736b4303e7a74b98
+fremont.ninkilim.com IN SSHFP 4 2 bdf50046fc0a69bc5768004355240ba2315d2879de02e0edf9357f71df2a1060
+ninkilim.com IN A 23.239.4.45
+ninkilim.com IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+ninkilim.com IN MX 10 fremont.ninkilim.com
+ninkilim.com IN NS fremont.ninkilim.com
+www.ninkilim.com IN A 23.239.4.45
+www.ninkilim.com IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+
+jakarta.ninkilim.com IN A 172.232.248.130
+jakarta.ninkilim.com IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+jakarta.ninkilim.com IN SSHFP 4 1 b813860e728aae1137c18f3660b49a15d0310792
+jakarta.ninkilim.com IN SSHFP 4 2 cef66b44223ac4fd5d41b6a61cc98ad83fd84c2f984c550467817e44861a0e85
+ninkilim.com IN A 172.232.248.130
+ninkilim.com IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+ninkilim.com IN MX 10 jakarta.ninkilim.com
+ninkilim.com IN NS jakarta.ninkilim.com
+www.ninkilim.com IN A 172.232.248.130
+www.ninkilim.com IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+
+madrid.ninkilim.com IN A 172.233.108.211
+madrid.ninkilim.com IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+madrid.ninkilim.com IN SSHFP 4 1 8547824fc1cd1f268288c20b7ce066f3195446ef
+madrid.ninkilim.com IN SSHFP 4 2 8de342b8f866fb5a832c9c2733abde76e86be07013521fa52eb71b2a907b0e0a
+ninkilim.com IN A 172.233.108.211
+ninkilim.com IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+ninkilim.com IN MX 10 madrid.ninkilim.com
+ninkilim.com IN NS madrid.ninkilim.com
+www.ninkilim.com IN A 172.233.108.211
+www.ninkilim.com IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+
+stockholm.ninkilim.com IN A 172.232.159.35
+stockholm.ninkilim.com IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+stockholm.ninkilim.com IN SSHFP 4 1 328a1e39ec3ce6b026cb305a067f2bb3793672dd
+stockholm.ninkilim.com IN SSHFP 4 2 0bed77e1d396bff8f9c0d8403155c65be4d9ecebf3fcfd9784ecc83c68ab650d
+ninkilim.com IN A 172.232.159.35
+ninkilim.com IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+ninkilim.com IN MX 10 stockholm.ninkilim.com
+ninkilim.com IN NS stockholm.ninkilim.com
+www.ninkilim.com IN A 172.232.159.35
+www.ninkilim.com IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+#
+# RISEFLYORBIT.ORG
+#
+riseflyorbit.org IN SOA
+riseflyorbit.org IN TXT "v=spf1 a mx -all"
+riseflyorbit.org IN TXT "google-site-verification=xauCuTiw0VD4mIIK0hOun2uuDMXCzmTUmw4UUQzbTz8"
+
+amsterdam.riseflyorbit.org IN A 172.235.160.56
+amsterdam.riseflyorbit.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+amsterdam.riseflyorbit.org IN SSHFP 4 1 9c7fe74a6dc2acbea71141ba6d139088eb77fa4a
+amsterdam.riseflyorbit.org IN SSHFP 4 2 eba19ccbfffe44935fbc5fd1754aeb651826e8c0ad6d9e06432553f78ce753ce
+riseflyorbit.org IN A 172.235.160.56
+riseflyorbit.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+riseflyorbit.org IN MX 10 amsterdam.riseflyorbit.org
+riseflyorbit.org IN NS amsterdam.riseflyorbit.org
+www.riseflyorbit.org IN A 172.235.160.56
+www.riseflyorbit.org IN AAAA 2600:3c0e::f03c:95ff:fe1b:b936
+
+fremont.riseflyorbit.org IN A 23.239.4.45
+fremont.riseflyorbit.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+fremont.riseflyorbit.org IN SSHFP 4 1 9831cd42b033e41e5cf8ed07736b4303e7a74b98
+fremont.riseflyorbit.org IN SSHFP 4 2 bdf50046fc0a69bc5768004355240ba2315d2879de02e0edf9357f71df2a1060
+riseflyorbit.org IN A 23.239.4.45
+riseflyorbit.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+riseflyorbit.org IN MX 10 fremont.riseflyorbit.org
+riseflyorbit.org IN NS fremont.riseflyorbit.org
+www.riseflyorbit.org IN A 23.239.4.45
+www.riseflyorbit.org IN AAAA 2600:3c01::f03c:93ff:fe89:7cea
+
+jakarta.riseflyorbit.org IN A 172.232.248.130
+jakarta.riseflyorbit.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+jakarta.riseflyorbit.org IN SSHFP 4 1 b813860e728aae1137c18f3660b49a15d0310792
+jakarta.riseflyorbit.org IN SSHFP 4 2 cef66b44223ac4fd5d41b6a61cc98ad83fd84c2f984c550467817e44861a0e85
+riseflyorbit.org IN A 172.232.248.130
+riseflyorbit.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+riseflyorbit.org IN MX 10 jakarta.riseflyorbit.org
+riseflyorbit.org IN NS jakarta.riseflyorbit.org
+www.riseflyorbit.org IN A 172.232.248.130
+www.riseflyorbit.org IN AAAA 2600:3c0c::f03c:95ff:fe6d:49c8
+
+madrid.riseflyorbit.org IN A 172.233.108.211
+madrid.riseflyorbit.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+madrid.riseflyorbit.org IN SSHFP 4 1 8547824fc1cd1f268288c20b7ce066f3195446ef
+madrid.riseflyorbit.org IN SSHFP 4 2 8de342b8f866fb5a832c9c2733abde76e86be07013521fa52eb71b2a907b0e0a
+riseflyorbit.org IN A 172.233.108.211
+riseflyorbit.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+riseflyorbit.org IN MX 10 madrid.riseflyorbit.org
+riseflyorbit.org IN NS madrid.riseflyorbit.org
+www.riseflyorbit.org IN A 172.233.108.211
+www.riseflyorbit.org IN AAAA 2a01:7e02::f03c:95ff:fece:2073
+
+stockholm.riseflyorbit.org IN A 172.232.159.35
+stockholm.riseflyorbit.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+stockholm.riseflyorbit.org IN SSHFP 4 1 328a1e39ec3ce6b026cb305a067f2bb3793672dd
+stockholm.riseflyorbit.org IN SSHFP 4 2 0bed77e1d396bff8f9c0d8403155c65be4d9ecebf3fcfd9784ecc83c68ab650d
+riseflyorbit.org IN A 172.232.159.35
+riseflyorbit.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+riseflyorbit.org IN MX 10 stockholm.riseflyorbit.org
+riseflyorbit.org IN NS stockholm.riseflyorbit.org
+www.riseflyorbit.org IN A 172.232.159.35
+www.riseflyorbit.org IN AAAA 2600:3c09::f03c:95ff:fe93:7bd4
+#
+# EXTERNAL
+#
+koschuh.at IN A 195.234.101.236
+koschuh.at IN MX 10 mail.anw.at
+koschuh.at IN NS ns1.hartware.at
+koschuh.at IN NS hostmaster.org
+www.koschuh.at IN A 195.234.101.236
+
+isecht.org IN A 195.234.101.236
+isecht.org IN MX 10 mail.anw.at
+isecht.org IN NS ns1.hartware.at
+isecht.org IN NS hostmaster.org
+www.isecht.org IN A 195.234.101.236
+
+poscharnik.at IN A 195.234.101.236
+poscharnik.at IN MX 10 mail.anw.at
+poscharnik.at IN NS ns1.hartware.at
+poscharnik.at IN NS hostmaster.org
+www.poscharnik.at IN A 195.234.101.236
+
+waldsberg.at IN A 195.234.101.236
+waldsberg.at IN MX 10 mail.anw.at
+waldsberg.at IN NS ns1.hartware.at
+waldsberg.at IN NS hostmaster.org
+www.waldsberg.at IN A 195.234.101.236
+
+mailpool.at IN A 195.234.101.236
+mailpool.at IN MX 10 mail.anw.at
+mailpool.at IN NS ns1.hartware.at
+mailpool.at IN NS hostmaster.org
+www.mailpool.at IN A 195.234.101.236
+
+kniewallner.at IN A 195.234.101.236
+kniewallner.at IN MX 10 mail.anw.at
+kniewallner.at IN NS ns1.hartware.at
+kniewallner.at IN NS hostmaster.org
+www.kniewallner.at IN A 195.234.101.236
+
+psychologenklick.at IN A 195.234.101.236
+psychologenklick.at IN MX 10 mail.anw.at
+psychologenklick.at IN NS ns1.hartware.at
+psychologenklick.at IN NS hostmaster.org
+www.psychologenklick.at IN A 195.234.101.236
+
+hooonig.at IN A 195.234.101.236
+hooonig.at IN MX 10 mail.anw.at
+hooonig.at IN NS ns1.hartware.at
+hooonig.at IN NS hostmaster.org
+www.hooonig.at IN A 195.234.101.236
+
+stadtparkimker.at IN A 195.234.101.236
+stadtparkimker.at IN MX 10 mail.anw.at
+stadtparkimker.at IN NS ns1.hartware.at
+stadtparkimker.at IN NS hostmaster.org
+www.stadtparkimker.at IN A 195.234.101.236
+
+stefanec.at IN A 195.234.101.236
+stefanec.at IN MX 10 mail.anw.at
+stefanec.at IN NS ns1.hartware.at
+stefanec.at IN NS hostmaster.org
+www.stefanec.at IN A 195.234.101.236

@@ -1,0 +1,6 @@
+% layout 'default';
+% no strict;
+%= include 'postings/list'
+<div class="posting_navigation">
+    Impressions: <%= $impressions %>
+</div>
