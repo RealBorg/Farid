@@ -45,6 +45,7 @@ sub startup ($self) {
     # Hooks
     $self->hook(before_dispatch => sub ($c) {
         $c->stash->{'received'} = Time::HiRes::time() * 1000000000;
+        $c->req->url->base->scheme('https') if $c->req->headers->header('X-Forwarded-Proto') eq 'https';
     });
     $self->hook(after_dispatch => sub ($c) {
         eval {

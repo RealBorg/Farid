@@ -1,10 +1,6 @@
 package Farid::Command::ImportPeers;
 use Mojo::Base 'Mojolicious::Command', -signatures;
 
-use Mojo::URL;
-use Mojo::UserAgent;
-use Mojo::Util;
-
 has description => 'import peers from private/peers.txt';
 has usage => "Usage: $0 ImportPeers\n";
 
